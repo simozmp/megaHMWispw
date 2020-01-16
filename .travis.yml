@@ -1,0 +1,11 @@
+language: java
+jdk:
+- openjdk8
+addons:
+  sonarcloud:
+    organization: "simozmp"
+    token:
+      secure: "ouvz80gZSZrTxnaAM/5DKtcZq/eTXIwiKGZcp2AqAn7eCb8Iu1ta6P4aAzGlej/H3ipuYFj5VrNEJBXlgphLSmU3o/ENDNsgGOWZVuirmlcSq+Qc9Gqyy2+Z+9MRUx2o3yVzgZaq8kwPX1nfa+bZ9VYFHUvx5jJl3bsupGeGcDX7yX0rOw/peHBQtiH6/mQGlwzvgt4Xanvvutsf4fPcVsACiwyDaMJMXqagFvRKtojK4NyxewRKKyK4LzpNgd118U8LHkvD/o+yHBed63uGsrPYyEGeJWMWLXes7C7f6WM2o7NBrqijPQBueP3XIVp+l2mPIExUR0HjldcsURija7fyMkESIeGTbS4BlY3+8R9fx3OiESQJ+RsKJbaCOIK6g05qkq3jIIJyNqQ5BfsP/JqnxZVSjGW40WPFziWvRKzEZ9w5jUxVIg4MIKt8CrWzkgTxJB0sXasivJuDGEBSddDjffz4Qg+o1MKKPQ77hLop8IPWNITxKRJ7y69ABjHt7E+ZP3sp/zkknDrDFhIgl1JVJSd8tx5/G1HdEBQUF9DO7CqhD2hNz/imFIgGJJkB34kes5+WS3au8yYc49LSF56GOLDODIKxDIwhGRPp/4YLownUC/HXd5NCPQ6e+xM38XX7WY/PyqPt3BYj5442AMdVMkRTNJqbYG1mCcZSbwg="
+script: 
+-ant build
+-sonar-scanner -X
