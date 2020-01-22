@@ -1,6 +1,3 @@
-# Collection of ISPW homeworks
+# ISPW homework
 
-This repository has been created to:
-
--Collect the files for the MegaHMW
--Be set up with svn/travis/sonarcloud in order to do the fourth homework
+This repository has been created for the MegaHMW
